@@ -1,3 +1,4 @@
+import book from "./book.png";
 import "./App.css";
 import Dictionary from "./Dictionary";
 
@@ -6,7 +7,11 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <h1>Dictionary App 📖</h1>
+          <h1>
+            {" "}
+            <img src={book} className="App-logo img-fluid" alt="book" />
+            Dictionary App{" "}
+          </h1>
         </header>
         <main>
           <Dictionary defaultKeyword="heaven" />
